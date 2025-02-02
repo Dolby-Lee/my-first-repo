@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce Website</title>
+    <title>個人簡介</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,75 +11,25 @@
             padding: 0;
             background-color: #f4f4f4;
         }
-
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
         }
-
-        header h1 {
-            margin: 0;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .container {
+        section {
             padding: 20px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            margin: 15px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
-        .product {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 15px;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .product img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-        }
-
-        .product h3 {
-            margin: 10px 0;
-        }
-
-        .product button {
-            background-color: #333;
-            color: #fff;
-            border: none;
-            padding: 10px 15px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        .product button:hover {
-            background-color: #555;
-        }
-
         footer {
-            background-color: #333;
-            color: #fff;
             text-align: center;
-            padding: 10px;
-            position: fixed;
+            padding: 10px 0;
+            background: #35424a;
+            color: #ffffff;
+            position: relative;
             bottom: 0;
             width: 100%;
         }
@@ -87,43 +37,26 @@
 </head>
 <body>
     <header>
-        <h1>My Shop</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Products</a>
-            <a href="#">Contact</a>
-        </nav>
+        <h1>歡迎來到我的個人簡介網站</h1>
     </header>
-
-    <main class="container">
-        <div class="product">
-            <img src="https://via.placeholder.com/250" alt="Product 1">
-            <h3>Product 1</h3>
-            <p>$10.00</p>
-            <button onclick="addToCart('Product 1')">Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/250" alt="Product 2">
-            <h3>Product 2</h3>
-            <p>$20.00</p>
-            <button onclick="addToCart('Product 2')">Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/250" alt="Product 3">
-            <h3>Product 3</h3>
-            <p>$30.00</p>
-            <button onclick="addToCart('Product 3')">Add to Cart</button>
-        </div>
-    </main>
-
+    <section>
+        <h2>關於我</h2>
+        <p>你好！我是一名熱愛學習和探索新事物的人。我的興趣包括編程、設計和旅遊。</p>
+    </section>
+    <section>
+        <h2>我的技能</h2>
+        <ul>
+            <li>網頁開發</li>
+            <li>數據分析</li>
+            <li>圖形設計</li>
+        </ul>
+    </section>
+    <section>
+        <h2>聯絡我</h2>
+        <p>你可以通過電子郵件與我聯絡：<a href="mailto:example@example.com">example@example.com</a></p>
+    </section>
     <footer>
-        &copy; 2025 My Shop
+        <p>&copy; 2025 我的名字. 版權所有.</p>
     </footer>
-
-    <script>
-        function addToCart(productName) {
-            alert(`${productName} has been added to your cart!`);
-        }
-    </script>
 </body>
 </html>
