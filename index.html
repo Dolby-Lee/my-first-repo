@@ -1,62 +1,54 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-HK">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>個人簡介</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #35424a;
-            color: #ffffff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        section {
-            padding: 20px;
-            margin: 15px;
-            background: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background: #35424a;
-            color: #ffffff;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>人生規劃指南</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <header>
-        <h1>歡迎來到我的個人簡介網站12345678</h1>
-    </header>
-    <section>
-        <h2>關於我</h2>
-        <p>你好！我是一名熱愛學習和探索新事物的人。我的興趣包括編程、設計和旅遊。</p>
-    </section>
-    <section>
-        <h2>我的技能</h2>
-        <ul>
-            <li>網頁開發</li>
-            <li>數據分析</li>
-            <li>圖形設計</li>
-        </ul>
-    </section>
-    <section>
-        <h2>聯絡我</h2>
-        <p>你可以通過電子郵件與我聯絡：<a href="mailto:example@example.com">example@example.com</a></p>
-    </section>
-    <footer>
-        <p>&copy; 2025 我的名字. 版權所有.</p>
-    </footer>
+
+    <!-- 頂部導航欄 -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">人生規劃指南</a>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h2>📌 設定你的角色</h2>
+        <form id="user-form">
+            <div class="mb-3">
+                <label class="form-label">姓名：</label>
+                <input type="text" id="username" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">生日：</label>
+                <input type="date" id="birthdate" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">性別：</label>
+                <select id="gender" class="form-control">
+                    <option value="male">男</option>
+                    <option value="female">女</option>
+                    <option value="other">其他</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">儲存設定</button>
+        </form>
+    </div>
+
+    <div class="container mt-5">
+        <h2>✅ 任務列表</h2>
+        <ul id="task-list" class="list-group"></ul>
+    </div>
+
+    <div class="container mt-5">
+        <h2>🏆 你的點數</h2>
+        <p id="user-points">點數：0</p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
